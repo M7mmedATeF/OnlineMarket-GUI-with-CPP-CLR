@@ -1,0 +1,59 @@
+  OnlineMarketGUI.Dashboard.resources - Embedded, ContainedInManifestFile, 
+  OnlineMarketGUI.LoginForm.resources - Embedded, ContainedInManifestFile, 
+  OnlineMarketGUI.MyForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly OnlineMarketGUI, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly HelpingTools, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly HelpingTools, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Class OnlineMarketGUI.Dashboard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(std.vector<User\,std::allocator<User> >*, std.vector<Product\,std::allocator<Product> >*, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean editmode : Public
+    Int32 editPos : Public
+    Boolean dragging : Public
+    Double mouseX : Public
+    Double mouseY : Public
+    std.vector<Product\,std::allocator<Product> >* products : Public
+    std.vector<User\,std::allocator<User> >* users : Public
+    std.vector<int\,std::allocator<int> >* carte : Public
+    std.vector<int\,std::allocator<int> >* carteQuantity : Public
+    User* LoggedUser : Public
+    Int32 loggedInID : Public
+    Int32 currentProd : Public
+    Int32 rateId : Public
+    Int32 pos : Public
+Class OnlineMarketGUI.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(std.vector<User\,std::allocator<User> >*, std.vector<Product\,std::allocator<Product> >*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 LoggedInID : Public
+    Boolean isDragged : Public
+    Boolean regesterd : Public
+    Double mouseX : Public
+    Double mouseY : Public
+    std.vector<User\,std::allocator<User> >* users : Public
+    std.vector<Product\,std::allocator<Product> >* products : Public
+Class OnlineMarketGUI.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.vector<User\,std::allocator<User> >* users : Public
+    std.vector<Product\,std::allocator<Product> >* products : Public
+    Boolean gotUsersData : Public
+    Int32 counter : Public

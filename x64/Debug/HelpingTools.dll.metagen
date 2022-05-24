@@ -1,0 +1,131 @@
+  HelpingTools.carteProduct.resources - Embedded, ContainedInManifestFile, 
+  HelpingTools.dashProduct.resources - Embedded, ContainedInManifestFile, 
+  HelpingTools.offersProduct.resources - Embedded, ContainedInManifestFile, 
+  HelpingTools.prodEditor.resources - Embedded, ContainedInManifestFile, 
+  HelpingTools.storeProduct.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly HelpingTools, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class HelpingTools.carteProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 pos : Public
+    System.Windows.Forms.Button button1 : Public
+    System.Windows.Forms.Button button2 : Public
+    System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3 : Public
+    System.Windows.Forms.Label pname : Public
+    System.Windows.Forms.Label label9 : Public
+    System.Windows.Forms.Label pcategory : Public
+    System.Windows.Forms.Label label1 : Public
+    System.Windows.Forms.NumericUpDown numericUpDown1 : Public
+    System.Windows.Forms.Panel panel1 : Public
+    System.Windows.Forms.Label label2 : Public
+    System.Windows.Forms.Label price : Public
+    System.Windows.Forms.Label quantity : Public
+    System.Windows.Forms.Label label4 : Public
+    System.Windows.Forms.Label offer : Public
+    System.Windows.Forms.Label label6 : Public
+    System.Windows.Forms.Label totalprice : Public
+    System.Windows.Forms.Label label8 : Public
+  Properties:
+    Int32 prodPos 'get ' : 
+  Events:
+    System.EventHandler`1[System.Int32] addQuantity: SpecialName
+    System.EventHandler`1[System.Int32] deleteProduct: SpecialName
+  Methods:
+    add_deleteProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_deleteProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_addQuantity(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_addQuantity(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_prodPos(): PrivateScope, Public, HideBySig, SpecialName
+Class HelpingTools.prodEditor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Int32, std.vector<Product\,std::allocator<Product> >*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.vector<Product\,std::allocator<Product> >* products : Public
+    Int32 pos : Public
+Class HelpingTools.dashProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.vector<Product\,std::allocator<Product> >* products : Public
+    Int32 id : Public
+    System.Windows.Forms.Label pcompany : Public
+    System.Windows.Forms.Label pquantity : Public
+    System.Windows.Forms.Label pprice : Public
+    System.Windows.Forms.Label poffer : Public
+    Int32 pid : Public
+    System.Windows.Forms.Label pname : Public
+    System.Windows.Forms.Label pcategory : Public
+  Properties:
+    Int32 Product_id 'get set' : 
+    System.String offer 'set' : 
+    System.String price 'set' : 
+    System.String quantity 'set' : 
+    System.String company 'set' : 
+    System.String category 'set' : 
+    System.String name 'set' : 
+  Events:
+    System.EventHandler`1[System.Int32] removeProduct: SpecialName
+    System.EventHandler`1[System.Int32] edit: SpecialName
+  Methods:
+    getPRData(vector<Product\,std::allocator<Product> >*): PrivateScope, Public, HideBySig
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    set_category(String): PrivateScope, Public, HideBySig, SpecialName
+    set_company(String): PrivateScope, Public, HideBySig, SpecialName
+    set_quantity(String): PrivateScope, Public, HideBySig, SpecialName
+    set_price(String): PrivateScope, Public, HideBySig, SpecialName
+    set_offer(String): PrivateScope, Public, HideBySig, SpecialName
+    set_Product_id(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Product_id(): PrivateScope, Public, HideBySig, SpecialName
+    add_edit(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_edit(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_removeProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_removeProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+Class HelpingTools.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class HelpingTools.offersProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 pos : Public
+    System.Windows.Forms.Label pname : Public
+    System.Windows.Forms.Label pcompany : Public
+    System.Windows.Forms.Label label1 : Public
+  Events:
+    System.EventHandler`1[System.Int32] viewProduct: SpecialName
+  Methods:
+    add_viewProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_viewProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+Class HelpingTools.storeProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 pos : Public
+    Int32 rate : Public
+    std.vector<int\,std::allocator<int> >* args : Public
+    System.Windows.Forms.Label pname : Public
+    System.Windows.Forms.Label pcompany : Public
+  Properties:
+    System.String company 'set' : 
+    System.String name 'set' : 
+  Events:
+    System.EventHandler`1[System.Int32] viewProduct: SpecialName
+  Methods:
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    set_company(String): PrivateScope, Public, HideBySig, SpecialName
+    add_viewProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_viewProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName

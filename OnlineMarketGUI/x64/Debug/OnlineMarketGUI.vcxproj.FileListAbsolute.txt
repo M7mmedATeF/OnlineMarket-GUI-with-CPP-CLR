@@ -1,0 +1,7 @@
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.vcxproj.AssemblyReference.cache
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.Dashboard.resources
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.LoginForm.resources
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.MyForm.resources
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.vcxproj.GenerateResource.cache
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.vcxproj.CopyComplete

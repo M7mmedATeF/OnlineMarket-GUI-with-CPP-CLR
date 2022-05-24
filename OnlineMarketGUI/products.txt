@@ -1,0 +1,48 @@
+1
+Football CR7
+Nike
+10
+50
+2
+shoes
+25
+2
+GM:2023
+GM Cars
+10
+50000
+1
+Car
+80
+3
+T-Shirt HXH
+Animefy
+10
+50
+1
+Clothes
+10
+4
+T-Shirt GT
+Zara
+10
+50
+1
+Clothes
+20
+5
+Teeth Brush
+Signal
+10
+2
+2
+clean up
+0
+6
+USB 3
+Dragon
+20
+5
+1
+Accessories
+0
