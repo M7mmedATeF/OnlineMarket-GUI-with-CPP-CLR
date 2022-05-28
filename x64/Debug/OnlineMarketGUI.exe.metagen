@@ -18,8 +18,6 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
-Assembly HelpingTools, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
-	hash=None, flags=None
 Class OnlineMarketGUI.Dashboard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(std.vector<User\,std::allocator<User> >*, std.vector<Product\,std::allocator<Product> >*, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -437,10 +437,10 @@ namespace OnlineMarketGUI {
 			this->panel4->Controls->Add(this->label9);
 			this->panel4->Controls->Add(this->label8);
 			this->panel4->Controls->Add(this->label5);
-			this->panel4->Location = System::Drawing::Point(2, 39);
+			this->panel4->Location = System::Drawing::Point(2, 35);
 			this->panel4->Margin = System::Windows::Forms::Padding(2);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(930, 491);
+			this->panel4->Size = System::Drawing::Size(930, 495);
 			this->panel4->TabIndex = 3;
 			this->panel4->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &LoginForm::panel4_Paint);
 			// 
@@ -518,7 +518,7 @@ namespace OnlineMarketGUI {
 			this->button5->Font = (gcnew System::Drawing::Font(L"Oswald", 19.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button5->ForeColor = System::Drawing::Color::White;
-			this->button5->Location = System::Drawing::Point(-1, -3);
+			this->button5->Location = System::Drawing::Point(-1, 7);
 			this->button5->Margin = System::Windows::Forms::Padding(2);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(56, 57);
@@ -705,6 +705,7 @@ namespace OnlineMarketGUI {
 		label6->Text = "Login";
 
 		panel2->BringToFront();
+		panel3->BringToFront();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 		for (int i = 0; i < users->size(); i++) {
@@ -744,17 +745,19 @@ private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	label6->Text = "Register";
 	panel4->BringToFront();
-
+	panel3->BringToFront();
 }
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
 	panel1->BringToFront();
+	panel3->BringToFront();
 	label6->Text = "Where to go?";
 }
 
 private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
 	panel1->BringToFront();
+	panel3->BringToFront();
 	label6->Text = "Where to go?";
 }
 private: System::Void panel4_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {

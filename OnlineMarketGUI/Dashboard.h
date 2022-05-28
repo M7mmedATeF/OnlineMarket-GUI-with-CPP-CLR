@@ -88,7 +88,7 @@ namespace OnlineMarketGUI {
 	private: System::Windows::Forms::Button^ button12;
 	private: System::Windows::Forms::Label^ tprice;
 	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::FlowLayoutPanel^ offerpanel;
+
 	private: System::Windows::Forms::FlowLayoutPanel^ flowLayoutPanel2;
 	private: System::Windows::Forms::Button^ button6;
 	private: System::Windows::Forms::Panel^ dashpanelContainer;
@@ -144,6 +144,15 @@ private: System::Windows::Forms::TextBox^ textBox8;
 private: System::Windows::Forms::CheckBox^ checkBox1;
 private: System::Windows::Forms::Label^ label23;
 private: System::Windows::Forms::Label^ label24;
+private: System::Windows::Forms::Button^ button16;
+private: System::Windows::Forms::Panel^ srccontainer;
+private: System::Windows::Forms::FlowLayoutPanel^ srcPanel;
+private: System::Windows::Forms::Panel^ panel8;
+private: System::Windows::Forms::TextBox^ textBox4;
+private: System::Windows::Forms::FlowLayoutPanel^ offerpanel;
+
+
+
 
 
 
@@ -222,12 +231,20 @@ private: System::Windows::Forms::Label^ label24;
 			this->splitter1 = (gcnew System::Windows::Forms::Splitter());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->offerpanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			this->cartPanelContainer = (gcnew System::Windows::Forms::Panel());
+			this->panel6 = (gcnew System::Windows::Forms::Panel());
+			this->flowLayoutPanel4 = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->tprice = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->cartepanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->spanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->viewpanel = (gcnew System::Windows::Forms::Panel());
 			this->button10 = (gcnew System::Windows::Forms::Button());
@@ -251,13 +268,6 @@ private: System::Windows::Forms::Label^ label24;
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->cartPanelContainer = (gcnew System::Windows::Forms::Panel());
-			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->flowLayoutPanel4 = (gcnew System::Windows::Forms::FlowLayoutPanel());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->tprice = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->cartepanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
 			this->editPanel = (gcnew System::Windows::Forms::Panel());
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
@@ -299,6 +309,10 @@ private: System::Windows::Forms::Label^ label24;
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->label28 = (gcnew System::Windows::Forms::Label());
+			this->srccontainer = (gcnew System::Windows::Forms::Panel());
+			this->srcPanel = (gcnew System::Windows::Forms::FlowLayoutPanel());
+			this->panel8 = (gcnew System::Windows::Forms::Panel());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button8 = (gcnew System::Windows::Forms::Button());
@@ -311,13 +325,13 @@ private: System::Windows::Forms::Label^ label24;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->panel1->SuspendLayout();
 			this->panel3->SuspendLayout();
+			this->cartPanelContainer->SuspendLayout();
+			this->panel6->SuspendLayout();
+			this->flowLayoutPanel4->SuspendLayout();
 			this->viewpanel->SuspendLayout();
 			this->panel5->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->flowLayoutPanel3->SuspendLayout();
-			this->cartPanelContainer->SuspendLayout();
-			this->panel6->SuspendLayout();
-			this->flowLayoutPanel4->SuspendLayout();
 			this->editPanel->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
@@ -325,6 +339,8 @@ private: System::Windows::Forms::Label^ label24;
 			this->dashpanelContainer->SuspendLayout();
 			this->flowLayoutPanel5->SuspendLayout();
 			this->userProfile->SuspendLayout();
+			this->srccontainer->SuspendLayout();
+			this->panel8->SuspendLayout();
 			this->panel2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->splitContainer1))->BeginInit();
 			this->splitContainer1->SuspendLayout();
@@ -339,6 +355,7 @@ private: System::Windows::Forms::Label^ label24;
 			this->flowLayoutPanel1->Controls->Add(this->splitter1);
 			this->flowLayoutPanel1->Controls->Add(this->button1);
 			this->flowLayoutPanel1->Controls->Add(this->button2);
+			this->flowLayoutPanel1->Controls->Add(this->button16);
 			this->flowLayoutPanel1->Controls->Add(this->button3);
 			this->flowLayoutPanel1->Controls->Add(this->button5);
 			this->flowLayoutPanel1->Controls->Add(this->button4);
@@ -430,6 +447,34 @@ private: System::Windows::Forms::Label^ label24;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &Dashboard::button2_Click);
 			// 
+			// button16
+			// 
+			this->button16->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->button16->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->button16->FlatAppearance->BorderSize = 0;
+			this->button16->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(166)),
+				static_cast<System::Int32>(static_cast<System::Byte>(8)), static_cast<System::Int32>(static_cast<System::Byte>(50)));
+			this->button16->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)),
+				static_cast<System::Int32>(static_cast<System::Byte>(7)), static_cast<System::Int32>(static_cast<System::Byte>(70)));
+			this->button16->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button16->Font = (gcnew System::Drawing::Font(L"Oswald", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button16->ForeColor = System::Drawing::SystemColors::Control;
+			this->button16->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button16.Image")));
+			this->button16->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->button16->Location = System::Drawing::Point(0, 254);
+			this->button16->Margin = System::Windows::Forms::Padding(0);
+			this->button16->Name = L"button16";
+			this->button16->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
+			this->button16->Size = System::Drawing::Size(195, 51);
+			this->button16->TabIndex = 7;
+			this->button16->Text = L"   Search";
+			this->button16->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
+			this->button16->UseCompatibleTextRendering = true;
+			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Click += gcnew System::EventHandler(this, &Dashboard::button16_Click);
+			// 
 			// button3
 			// 
 			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
@@ -446,7 +491,7 @@ private: System::Windows::Forms::Label^ label24;
 			this->button3->ForeColor = System::Drawing::SystemColors::Control;
 			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
 			this->button3->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button3->Location = System::Drawing::Point(0, 254);
+			this->button3->Location = System::Drawing::Point(0, 305);
 			this->button3->Margin = System::Windows::Forms::Padding(0);
 			this->button3->Name = L"button3";
 			this->button3->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
@@ -474,7 +519,7 @@ private: System::Windows::Forms::Label^ label24;
 			this->button5->ForeColor = System::Drawing::SystemColors::Control;
 			this->button5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button5.Image")));
 			this->button5->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button5->Location = System::Drawing::Point(0, 305);
+			this->button5->Location = System::Drawing::Point(0, 356);
 			this->button5->Margin = System::Windows::Forms::Padding(0);
 			this->button5->Name = L"button5";
 			this->button5->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
@@ -503,7 +548,7 @@ private: System::Windows::Forms::Label^ label24;
 			this->button4->ForeColor = System::Drawing::Color::White;
 			this->button4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button4.Image")));
 			this->button4->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button4->Location = System::Drawing::Point(0, 356);
+			this->button4->Location = System::Drawing::Point(0, 407);
 			this->button4->Margin = System::Windows::Forms::Padding(0);
 			this->button4->Name = L"button4";
 			this->button4->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
@@ -529,13 +574,14 @@ private: System::Windows::Forms::Label^ label24;
 			// 
 			// panel3
 			// 
-			this->panel3->Controls->Add(this->cartPanelContainer);
 			this->panel3->Controls->Add(this->offerpanel);
+			this->panel3->Controls->Add(this->cartPanelContainer);
 			this->panel3->Controls->Add(this->spanel);
 			this->panel3->Controls->Add(this->viewpanel);
 			this->panel3->Controls->Add(this->editPanel);
 			this->panel3->Controls->Add(this->dashpanelContainer);
 			this->panel3->Controls->Add(this->userProfile);
+			this->panel3->Controls->Add(this->srccontainer);
 			this->panel3->Location = System::Drawing::Point(3, 46);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(1032, 547);
@@ -550,6 +596,87 @@ private: System::Windows::Forms::Label^ label24;
 			this->offerpanel->Size = System::Drawing::Size(1032, 547);
 			this->offerpanel->TabIndex = 10;
 			this->offerpanel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::offerpanel_Paint);
+			// 
+			// cartPanelContainer
+			// 
+			this->cartPanelContainer->Controls->Add(this->panel6);
+			this->cartPanelContainer->Controls->Add(this->cartepanel);
+			this->cartPanelContainer->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->cartPanelContainer->Location = System::Drawing::Point(0, 0);
+			this->cartPanelContainer->Name = L"cartPanelContainer";
+			this->cartPanelContainer->Size = System::Drawing::Size(1032, 547);
+			this->cartPanelContainer->TabIndex = 9;
+			// 
+			// panel6
+			// 
+			this->panel6->Controls->Add(this->flowLayoutPanel4);
+			this->panel6->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->panel6->Location = System::Drawing::Point(0, 499);
+			this->panel6->Name = L"panel6";
+			this->panel6->Size = System::Drawing::Size(1032, 48);
+			this->panel6->TabIndex = 11;
+			// 
+			// flowLayoutPanel4
+			// 
+			this->flowLayoutPanel4->Controls->Add(this->button12);
+			this->flowLayoutPanel4->Controls->Add(this->tprice);
+			this->flowLayoutPanel4->Controls->Add(this->label2);
+			this->flowLayoutPanel4->FlowDirection = System::Windows::Forms::FlowDirection::RightToLeft;
+			this->flowLayoutPanel4->Location = System::Drawing::Point(582, 3);
+			this->flowLayoutPanel4->Name = L"flowLayoutPanel4";
+			this->flowLayoutPanel4->Size = System::Drawing::Size(447, 50);
+			this->flowLayoutPanel4->TabIndex = 0;
+			// 
+			// button12
+			// 
+			this->button12->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)),
+				static_cast<System::Int32>(static_cast<System::Byte>(7)), static_cast<System::Int32>(static_cast<System::Byte>(80)));
+			this->button12->FlatAppearance->BorderSize = 3;
+			this->button12->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button12->Font = (gcnew System::Drawing::Font(L"Oswald", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button12->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(7)),
+				static_cast<System::Int32>(static_cast<System::Byte>(80)));
+			this->button12->Location = System::Drawing::Point(311, 3);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(133, 38);
+			this->button12->TabIndex = 2;
+			this->button12->Text = L"Buy";
+			this->button12->UseCompatibleTextRendering = true;
+			this->button12->UseVisualStyleBackColor = true;
+			this->button12->Click += gcnew System::EventHandler(this, &Dashboard::button12_Click);
+			// 
+			// tprice
+			// 
+			this->tprice->AutoSize = true;
+			this->tprice->Font = (gcnew System::Drawing::Font(L"Oswald", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tprice->Location = System::Drawing::Point(269, 10);
+			this->tprice->Margin = System::Windows::Forms::Padding(0, 10, 10, 0);
+			this->tprice->Name = L"tprice";
+			this->tprice->Size = System::Drawing::Size(29, 24);
+			this->tprice->TabIndex = 4;
+			this->tprice->Text = L"0$";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Oswald", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(193, 10);
+			this->label2->Margin = System::Windows::Forms::Padding(3, 10, 0, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(76, 24);
+			this->label2->TabIndex = 5;
+			this->label2->Text = L"Total Price:";
+			// 
+			// cartepanel
+			// 
+			this->cartepanel->AutoScroll = true;
+			this->cartepanel->Location = System::Drawing::Point(0, 0);
+			this->cartepanel->Name = L"cartepanel";
+			this->cartepanel->Size = System::Drawing::Size(1032, 499);
+			this->cartepanel->TabIndex = 10;
 			// 
 			// spanel
 			// 
@@ -854,87 +981,6 @@ private: System::Windows::Forms::Label^ label24;
 			this->label3->TabIndex = 1;
 			this->label3->Text = L"Company:";
 			this->label3->UseCompatibleTextRendering = true;
-			// 
-			// cartPanelContainer
-			// 
-			this->cartPanelContainer->Controls->Add(this->panel6);
-			this->cartPanelContainer->Controls->Add(this->cartepanel);
-			this->cartPanelContainer->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->cartPanelContainer->Location = System::Drawing::Point(0, 0);
-			this->cartPanelContainer->Name = L"cartPanelContainer";
-			this->cartPanelContainer->Size = System::Drawing::Size(1032, 547);
-			this->cartPanelContainer->TabIndex = 9;
-			// 
-			// panel6
-			// 
-			this->panel6->Controls->Add(this->flowLayoutPanel4);
-			this->panel6->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->panel6->Location = System::Drawing::Point(0, 499);
-			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(1032, 48);
-			this->panel6->TabIndex = 11;
-			// 
-			// flowLayoutPanel4
-			// 
-			this->flowLayoutPanel4->Controls->Add(this->button12);
-			this->flowLayoutPanel4->Controls->Add(this->tprice);
-			this->flowLayoutPanel4->Controls->Add(this->label2);
-			this->flowLayoutPanel4->FlowDirection = System::Windows::Forms::FlowDirection::RightToLeft;
-			this->flowLayoutPanel4->Location = System::Drawing::Point(582, 3);
-			this->flowLayoutPanel4->Name = L"flowLayoutPanel4";
-			this->flowLayoutPanel4->Size = System::Drawing::Size(447, 50);
-			this->flowLayoutPanel4->TabIndex = 0;
-			// 
-			// button12
-			// 
-			this->button12->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)),
-				static_cast<System::Int32>(static_cast<System::Byte>(7)), static_cast<System::Int32>(static_cast<System::Byte>(80)));
-			this->button12->FlatAppearance->BorderSize = 3;
-			this->button12->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button12->Font = (gcnew System::Drawing::Font(L"Oswald", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button12->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(7)),
-				static_cast<System::Int32>(static_cast<System::Byte>(80)));
-			this->button12->Location = System::Drawing::Point(311, 3);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(133, 38);
-			this->button12->TabIndex = 2;
-			this->button12->Text = L"Buy";
-			this->button12->UseCompatibleTextRendering = true;
-			this->button12->UseVisualStyleBackColor = true;
-			this->button12->Click += gcnew System::EventHandler(this, &Dashboard::button12_Click);
-			// 
-			// tprice
-			// 
-			this->tprice->AutoSize = true;
-			this->tprice->Font = (gcnew System::Drawing::Font(L"Oswald", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->tprice->Location = System::Drawing::Point(269, 10);
-			this->tprice->Margin = System::Windows::Forms::Padding(0, 10, 10, 0);
-			this->tprice->Name = L"tprice";
-			this->tprice->Size = System::Drawing::Size(29, 24);
-			this->tprice->TabIndex = 4;
-			this->tprice->Text = L"0$";
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Oswald", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(193, 10);
-			this->label2->Margin = System::Windows::Forms::Padding(3, 10, 0, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(76, 24);
-			this->label2->TabIndex = 5;
-			this->label2->Text = L"Total Price:";
-			// 
-			// cartepanel
-			// 
-			this->cartepanel->AutoScroll = true;
-			this->cartepanel->Location = System::Drawing::Point(0, 0);
-			this->cartepanel->Name = L"cartepanel";
-			this->cartepanel->Size = System::Drawing::Size(1032, 499);
-			this->cartepanel->TabIndex = 10;
 			// 
 			// editPanel
 			// 
@@ -1514,6 +1560,44 @@ private: System::Windows::Forms::Label^ label24;
 			this->label28->Text = L"Name:";
 			this->label28->UseCompatibleTextRendering = true;
 			// 
+			// srccontainer
+			// 
+			this->srccontainer->Controls->Add(this->srcPanel);
+			this->srccontainer->Controls->Add(this->panel8);
+			this->srccontainer->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->srccontainer->Location = System::Drawing::Point(0, 0);
+			this->srccontainer->Name = L"srccontainer";
+			this->srccontainer->Size = System::Drawing::Size(1032, 547);
+			this->srccontainer->TabIndex = 14;
+			// 
+			// srcPanel
+			// 
+			this->srcPanel->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->srcPanel->Location = System::Drawing::Point(0, 49);
+			this->srcPanel->Name = L"srcPanel";
+			this->srcPanel->Size = System::Drawing::Size(1032, 498);
+			this->srcPanel->TabIndex = 1;
+			this->srcPanel->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Dashboard::srcPanel_Paint);
+			// 
+			// panel8
+			// 
+			this->panel8->Controls->Add(this->textBox4);
+			this->panel8->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panel8->Location = System::Drawing::Point(0, 0);
+			this->panel8->Name = L"panel8";
+			this->panel8->Size = System::Drawing::Size(1032, 49);
+			this->panel8->TabIndex = 0;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox4->Location = System::Drawing::Point(3, 3);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(1017, 38);
+			this->textBox4->TabIndex = 0;
+			this->textBox4->KeyPress += gcnew System::Windows::Forms::KeyPressEventHandler(this, &Dashboard::textBox4_KeyPress);
+			// 
 			// panel2
 			// 
 			this->panel2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(242)), static_cast<System::Int32>(static_cast<System::Byte>(7)),
@@ -1663,16 +1747,16 @@ private: System::Windows::Forms::Label^ label24;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->panel1->ResumeLayout(false);
 			this->panel3->ResumeLayout(false);
+			this->cartPanelContainer->ResumeLayout(false);
+			this->panel6->ResumeLayout(false);
+			this->flowLayoutPanel4->ResumeLayout(false);
+			this->flowLayoutPanel4->PerformLayout();
 			this->viewpanel->ResumeLayout(false);
 			this->viewpanel->PerformLayout();
 			this->panel5->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->flowLayoutPanel3->ResumeLayout(false);
 			this->flowLayoutPanel3->PerformLayout();
-			this->cartPanelContainer->ResumeLayout(false);
-			this->panel6->ResumeLayout(false);
-			this->flowLayoutPanel4->ResumeLayout(false);
-			this->flowLayoutPanel4->PerformLayout();
 			this->editPanel->ResumeLayout(false);
 			this->editPanel->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown3))->EndInit();
@@ -1683,6 +1767,9 @@ private: System::Windows::Forms::Label^ label24;
 			this->flowLayoutPanel5->PerformLayout();
 			this->userProfile->ResumeLayout(false);
 			this->userProfile->PerformLayout();
+			this->srccontainer->ResumeLayout(false);
+			this->panel8->ResumeLayout(false);
+			this->panel8->PerformLayout();
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->splitContainer1))->EndInit();
@@ -2172,6 +2259,30 @@ private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ 
 	carte->clear();
 	carteQuantity->clear();
 }
+private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+	label1->Text = "Search";
+	srccontainer->BringToFront();
+}
+private: System::Void srcPanel_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+}
+	   void showSearchProducts(String^ key) {
+		   srcPanel->Controls->Clear();
+		   for (int i = 0; i < products->size(); i++) {
+				if (toLowerCase(products->at(i).name).find(toLowerCase(SysToStd(key))) != string::npos || toLowerCase(products->at(i).category).find(toLowerCase(SysToStd(key))) != string::npos || toLowerCase(products->at(i).company).find(toLowerCase(SysToStd(key))) != string::npos) {
+					HelpingTools::searchProduct^ temp = gcnew HelpingTools::searchProduct();
+					temp->pname->Text = gcnew String(products->at(i).name.data());
+					temp->pcompany->Text = gcnew String(products->at(i).company.data());
+					temp->Width = 330;
+					temp->pos = i;
+					temp->showProduct += gcnew System::EventHandler<System::Int32 >(this, &Dashboard::storeProduct1_viewProduct);
+					srcPanel->Controls->Add(temp);
+			   }
+			}
+		}
+private: System::Void textBox4_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
+	showSearchProducts(textBox4->Text);
+}
+
 };
 }
 

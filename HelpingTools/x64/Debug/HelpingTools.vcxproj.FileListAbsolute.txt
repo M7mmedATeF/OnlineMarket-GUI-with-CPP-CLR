@@ -5,3 +5,4 @@ C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\HelpingTools\x64\Debug\Helpi
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\HelpingTools\x64\Debug\HelpingTools.prodEditor.resources
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\HelpingTools\x64\Debug\HelpingTools.storeProduct.resources
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\HelpingTools\x64\Debug\HelpingTools.vcxproj.GenerateResource.cache
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\HelpingTools\x64\Debug\HelpingTools.searchProduct.resources

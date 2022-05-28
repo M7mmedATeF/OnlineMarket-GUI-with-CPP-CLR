@@ -134,6 +134,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="searchProduct.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="storeProduct.h">
       <FileType>CppControl</FileType>
     </ClInclude>
@@ -151,6 +154,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="prodEditor.cpp" />
+    <ClCompile Include="searchProduct.cpp" />
     <ClCompile Include="storeProduct.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="prodEditor.resx">
       <DependentUpon>prodEditor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchProduct.resx">
+      <DependentUpon>searchProduct.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="storeProduct.resx">
       <DependentUpon>storeProduct.h</DependentUpon>

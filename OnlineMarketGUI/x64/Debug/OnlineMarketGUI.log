@@ -5,17 +5,17 @@ C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\MyForm.h(7,1
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\MyForm.h(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(2126,26): warning C4129: '.': unrecognized character escape sequence
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(1708,74): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(1708,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(2213,26): warning C4129: '.': unrecognized character escape sequence
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(1795,74): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(1795,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(9,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(857,26): warning C4129: '.': unrecognized character escape sequence
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(735,74): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(735,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(912,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(2056): warning C4715: 'OnlineMarketGUI::Dashboard::is_found': not all control paths return a value
-C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(776): warning C4715: 'OnlineMarketGUI::LoginForm::is_found': not all control paths return a value
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(860,26): warning C4129: '.': unrecognized character escape sequence
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(736,74): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(736,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(915,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\Dashboard.h(2143): warning C4715: 'OnlineMarketGUI::Dashboard::is_found': not all control paths return a value
+C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\OnlineMarketGUI\LoginForm.h(779): warning C4715: 'OnlineMarketGUI::LoginForm::is_found': not all control paths return a value
   Dashboard.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   OnlineMarketGUI.vcxproj -> C:\Users\Mohammed Atef\source\repos\OnlineMarketGUI\x64\Debug\OnlineMarketGUI.exe

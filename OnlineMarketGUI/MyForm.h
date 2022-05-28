@@ -35,6 +35,8 @@ namespace OnlineMarketGUI {
 		bool gotUsersData = false;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Panel^ panel1;
 
 	public:
 		int counter = 0;
@@ -94,8 +96,11 @@ namespace OnlineMarketGUI {
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel3->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// timer1
@@ -108,8 +113,8 @@ namespace OnlineMarketGUI {
 			// 
 			this->panel3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel3.BackgroundImage")));
 			this->panel3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->panel3->Controls->Add(this->panel1);
 			this->panel3->Controls->Add(this->label1);
-			this->panel3->Controls->Add(this->pictureBox1);
 			this->panel3->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel3->Location = System::Drawing::Point(0, 0);
 			this->panel3->Name = L"panel3";
@@ -126,7 +131,7 @@ namespace OnlineMarketGUI {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Andalus", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label1->Location = System::Drawing::Point(690, 384);
+			this->label1->Location = System::Drawing::Point(6, 382);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(42, 22);
 			this->label1->TabIndex = 1;
@@ -135,16 +140,40 @@ namespace OnlineMarketGUI {
 			// 
 			// pictureBox1
 			// 
-			this->pictureBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->pictureBox1->Anchor = System::Windows::Forms::AnchorStyles::None;
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-1, 326);
+			this->pictureBox1->Location = System::Drawing::Point(0, 5);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(76, 78);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->UseWaitCursor = true;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->BackColor = System::Drawing::Color::Transparent;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Neue Haas Grotesk Text Pro", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->ForeColor = System::Drawing::Color::White;
+			this->label2->Location = System::Drawing::Point(78, 21);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(271, 47);
+			this->label2->TabIndex = 2;
+			this->label2->Text = L"Online Market";
+			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
+			// 
+			// panel1
+			// 
+			this->panel1->BackColor = System::Drawing::Color::Transparent;
+			this->panel1->Controls->Add(this->pictureBox1);
+			this->panel1->Controls->Add(this->label2);
+			this->panel1->Location = System::Drawing::Point(190, 162);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(352, 86);
+			this->panel1->TabIndex = 3;
 			// 
 			// MyForm
 			// 
@@ -165,6 +194,8 @@ namespace OnlineMarketGUI {
 			this->panel3->ResumeLayout(false);
 			this->panel3->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			this->panel1->ResumeLayout(false);
+			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -176,12 +207,13 @@ namespace OnlineMarketGUI {
 			counter += 4;
 		}
 		else {
-			Form^ login = gcnew LoginForm(users, products);
+			//Form^ login = gcnew LoginForm(users, products);
+			Form^ store = gcnew Dashboard(users,products,2);
 			this->Hide();
 			timer1->Enabled = false;
-			login->ShowDialog();
+			store->ShowDialog();
+			//login->ShowDialog();
 			exit(1);
-			
 		}
 	}
 
@@ -272,6 +304,8 @@ private: System::Void panel3_Paint(System::Object^ sender, System::Windows::Form
 private: System::Void panel3_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
 	
 	
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

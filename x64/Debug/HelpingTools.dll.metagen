@@ -2,6 +2,7 @@
   HelpingTools.dashProduct.resources - Embedded, ContainedInManifestFile, 
   HelpingTools.offersProduct.resources - Embedded, ContainedInManifestFile, 
   HelpingTools.prodEditor.resources - Embedded, ContainedInManifestFile, 
+  HelpingTools.searchProduct.resources - Embedded, ContainedInManifestFile, 
   HelpingTools.storeProduct.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly HelpingTools, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
@@ -110,6 +111,19 @@ Class HelpingTools.offersProduct: AutoLayout, AnsiClass, Class, Public, BeforeFi
   Methods:
     add_viewProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
     remove_viewProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+Class HelpingTools.searchProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.UserControl
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 pos : Public
+    System.Windows.Forms.Label pname : Public
+    System.Windows.Forms.Label pcompany : Public
+    System.Windows.Forms.Button button1 : Public
+  Events:
+    System.EventHandler`1[System.Int32] showProduct: SpecialName
+  Methods:
+    add_showProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_showProduct(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
 Class HelpingTools.storeProduct: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.UserControl
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
